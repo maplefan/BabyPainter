@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <RelativeLayout
+            android:id="@+id/backgrndTuya"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButtonTuyaBack"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/back_btn" />
+
+            <ImageButton
+                android:id="@+id/imageButtonChooseColor"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/tiaoseban_btn" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDelete"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/imageButtonChooseColor"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/delete_btn" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/imageButtonNext"
+                app:srcCompat="@drawable/previous_btn" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/next_btn" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

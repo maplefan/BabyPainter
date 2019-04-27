@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.dp"
+        android:layout_marginBottom="5.dp"
+        android:layout_marginLeft="10.dp"
+        android:layout_marginRight="10.dp">
+
+        <TextView
+            android:id="@+id/A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="A" />
+        <TextView
+            android:id="@+id/hexA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingLeft="5.dp"
+            android:text="0"
+            android:layout_toRightOf="@id/A" />
+        <com.example.dxf.babypainter.GSeekBar
+            android:id="@+id/sbA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hexA"
+            android:layout_toRightOf="@id/hexA"
+            android:max="255"
+            gsb:progressColor="@color/progress_alpha" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.dp"
+        android:layout_marginBottom="5.dp"
+        android:layout_marginLeft="10.dp"
+        android:layout_marginRight="10.dp">
+        <TextView
+            android:id="@+id/R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="R" />
+        <TextView
+            android:id="@+id/hexR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:paddingLeft="5.dp"
+            android:layout_toRightOf="@id/R" />
+
+        <com.example.dxf.babypainter.GSeekBar
+            android:id="@+id/sbR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hexR"
+            android:layout_toRightOf="@id/hexR"
+            android:max="255"
+            gsb:progressColor="@color/progress_red" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.dp"
+        android:layout_marginBottom="5.dp"
+        android:layout_marginLeft="10.dp"
+        android:layout_marginRight="10.dp">
+        <TextView
+            android:id="@+id/G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="G" />
+        <TextView
+            android:id="@+id/hexG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingLeft="5.dp"
+            android:text="0"
+            android:layout_toRightOf="@id/G" />
+
+        <com.example.dxf.babypainter.GSeekBar
+            android:id="@+id/sbG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hexG"
+            android:layout_toRightOf="@id/hexG"
+            android:max="255"
+            gsb:progressColor="@color/progress_green" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.dp"
+        android:layout_marginBottom="5.dp"
+        android:layout_marginLeft="10.dp"
+        android:layout_marginRight="10.dp">
+        <TextView
+            android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:text="B" />
+        <TextView
+            android:id="@+id/hexB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingLeft="5.dp"
+            android:text="0"
+            android:layout_toRightOf="@id/B" />
+
+        <com.example.dxf.babypainter.GSeekBar
+            android:id="@+id/sbB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/hexB"
+            android:layout_toRightOf="@id/hexB"
+            android:max="255"
+            gsb:progressColor="@color/progress_blue" />
+
+    </RelativeLayout>
+
+</LinearLayout>

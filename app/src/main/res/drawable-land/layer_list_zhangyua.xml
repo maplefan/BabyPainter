@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:scaleType="centerInside"
+        android:drawable="@drawable/zhangyua1"/>
+    <item
+        android:scaleType="centerInside"
+        android:drawable="@drawable/zhangyua2"/>
+    <item
+        android:scaleType="centerInside"
+        android:drawable="@drawable/zhangyua3"/>
+    <item
+        android:scaleType="centerInside"
+        android:drawable="@drawable/zhangyua4"/>
+
+
+</layer-list>

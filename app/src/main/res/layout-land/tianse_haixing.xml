@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonColorBack"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/back_btn"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_marginRight="310dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="70dp"
+                android:layout_height="match_parent">
+
+                <com.example.dxf.babypainter.ColourImageBaseLayerView
+                    android:id="@+id/col"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/layer_list_haixing" />
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/imageButtonNext1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/next1_btn" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPrevious1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/imageButtonNext1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/previous1_btn" />
+
+            <LinearLayout
+                android:id="@+id/tianse"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignEnd="@+id/imageButtonColorC"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"
+                android:scaleType="centerInside">
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButtonColorB"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignBottom="@+id/imageButtonColorC"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/color_b" />
+
+            <ImageButton
+                android:id="@+id/imageButtonColorA"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/imageButtonColorB"
+                android:layout_marginBottom="131dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/color_a" />
+
+            <ImageButton
+                android:id="@+id/imageButtonColorC"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="82dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/color_c" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDelete"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageButtonColorA"
+                android:layout_marginTop="93dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/delete_btn" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAdd"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/imageButtonColorA"
+                android:layout_marginTop="-131dp"
+                app:srcCompat="@android:drawable/ic_input_add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
